@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="css/normalization.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d4dd70552b.js" crossorigin="anonymous"></script>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <aside>
+            <div class="logo">
+                <svg viewBox="0 0 100 100" focusable="false" class="chakra-icon css-1wus8q5">
+                    <g xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" version="1.1">
+                        <g id="logo-creative-tim-black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="icon" transform="translate(15.000000, 19.000000)" fill="currentColor"
+                                fill-rule="nonzero">
+                                <path
+                                    d="M66.4346744,1.49018376e-13 L3.56968951,1.49018376e-13 C1.59820443,1.49018376e-13 -2.98036753e-13,1.59820443 -2.98036753e-13,3.56968951 L-2.98036753e-13,33.5035241 C-2.98036753e-13,35.4750091 1.59820443,37.0732136 3.56968951,37.0732136 L16.4677598,37.0732136 L16.4677598,66.4346744 C16.4666001,67.3810129 16.8417189,68.288989 17.5104719,68.9585615 C18.1792249,69.628134 19.0867408,70.0043639 20.03308,70.0043639 L49.9669146,70.0043639 C51.9383997,70.0043639 53.5366041,68.4061595 53.5366041,66.4346744 L53.5366041,37.0863214 L66.4346744,37.0863214 C67.3810136,37.0863221 68.2885296,36.7100915 68.9572826,36.0405189 C69.6260355,35.3709464 70.0011544,34.4629704 70,33.5166319 L70,3.56968951 C70.0011544,2.62335099 69.6260355,1.71537495 68.9572826,1.04580242 C68.2885296,0.37622988 67.3810136,1.49018376e-13 66.4346744,1.49018376e-13 Z M4.13769396,4.14206323 L32.9311503,4.14206323 L32.9311503,32.9355196 L4.13769396,32.9355196 L4.13769396,4.14206323 Z M49.3989102,65.86667 L20.6054538,65.86667 L20.6054538,37.0863214 L49.3989102,37.0863214 L49.3989102,65.86667 Z M65.8623007,32.9355196 L37.0688443,32.9355196 L37.0688443,4.14206323 L65.8623007,4.14206323 L65.8623007,32.9355196 Z"
+                                    id="Shape"></path>
+                                <path
+                                    d="M23.6988934,23.3056595 C24.5142794,24.0708897 25.7898859,24.0506562 26.5805917,23.2599503 C27.3712976,22.4692445 27.3915311,21.193638 26.6263009,20.378252 L20.015603,13.767554 C19.2050095,12.9645312 17.8987889,12.9645312 17.0881954,13.767554 L10.4600204,20.378252 C9.90907005,20.8953125 9.68342943,21.6713831 9.87125954,22.4032422 C10.0590897,23.1351013 10.6305787,23.7065903 11.3624377,23.8944204 C12.0942968,24.0822505 12.8703675,23.8566099 13.387428,23.3056595 L18.5344222,18.1586654 L23.6988934,23.3056595 Z"
+                                    id="Path"></path>
+                                <path
+                                    d="M46.3185783,23.3056595 L51.4655725,18.1586654 L56.6125667,23.3056595 C57.4279526,24.0708897 58.7035592,24.0506562 59.494265,23.2599503 C60.2849709,22.4692445 60.3052044,21.193638 59.5399742,20.378252 L52.9292763,13.767554 C52.1186828,12.9645312 50.8124622,12.9645312 50.0018687,13.767554 L43.3911708,20.378252 C42.6259406,21.193638 42.6461741,22.4692445 43.43688,23.2599503 C44.2275858,24.0506562 45.5031924,24.0708897 46.3185783,23.3056595 L46.3185783,23.3056595 Z"
+                                    id="Path"></path>
+                                <path
+                                    d="M29.8508185,46.6987044 C29.0342976,45.9346441 27.7586832,45.9567597 26.9691385,46.7486649 C26.1795937,47.54057 26.1612859,48.8162446 26.9277802,49.6304812 L33.5384782,56.2368099 C33.9262423,56.6258256 34.452915,56.8444779 35.002182,56.8444779 C35.5514489,56.8444779 36.0781217,56.6258256 36.4658857,56.2368099 L43.0765837,49.6304812 C43.6002952,49.1075502 43.8052442,48.3449453 43.6142284,47.6299323 C43.4232126,46.9149194 42.8652519,46.3561259 42.1505246,46.1640439 C41.4357974,45.971962 40.6728876,46.1757734 40.1491761,46.6987044 L35.002182,51.8500678 L29.8508185,46.6987044 Z"
+                                    id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <a href="">PURITY UI DASHBOARD</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <span>Tables</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <span>Billing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <span>RTL</span>
+                    </a>
+                </li>
+
+                <p>account pages</p>
+
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <span>Tables</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <span>Billing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <span>RTL</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="need-help">
+                <div class="icon center">
+                    <i class="fa-solid fa-question center"></i>
+                </div>
+                <div class="text">
+                    <span>Need help?</span>
+                    <span>please check our docs</span>
+                </div>
+                <a href="">documentation</a>
+            </div>
+        </aside>
+        <main>
+            <header>
+                <div class="pages-name">
+                    <a href="">Pages</a>
+                    /
+                    <a href="">Dashboard</a>
+                    <a class="current-page" href="">Dashboard</a>
+                </div>
+                <nav>
+                    <div class="input">
+                        <input type="search" name="search" id="" placeholder="Type here....">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a class="sign-in" href="">Sing In</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-gear"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-bell"></i></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+            <section class="today-update">
+                <div class="box">
+                    <div class="text">
+                        <span class="title">Today's Moneys</span>
+                        <span class="value" title="+55%">$53,000</span>
+                    </div>
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <span class="title">Today's Moneys</span>
+                        <span class="value" title="+55%">$53,000</span>
+                    </div>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <span class="title">Today's Moneys</span>
+                        <span class="value" title="+55%">$53,000</span>
+                    </div>
+                    <i class="fa-solid fa-file"></i>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <span class="title">Today's Moneys</span>
+                        <span class="value" title="+55%">$53,000</span>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </section>
+
+            <section class="built-by">
+                <div>
+                    <div class="text">
+                        <span>Built by Developers</span>
+                        <h2>Purity UI Dashboard</h2>
+                        <p>From colors, cards, typography to complex elements, you will find the full documentation.</p>
+                        <div class="read-more"><a href="">Read more</a></div>
+                    </div>
+                    <div class="img center">
+                        <img src="https://demos.creative-tim.com/purity-ui-dashboard/static/media/logo-white.db174f3abf15e02cce0dfc1c14ccbd33.svg"
+                            alt="">
+                    </div>
+
+                </div>
+                <div>
+                    <div class="info">
+                        <h2>Work with the rockets</h2>
+                        <p>Wealth creation is a revolutionary recent positive-sum game. It is all about who takes the
+                            opportunity first.
+                        </p>
+                        <div class="read-more">Read More</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-and-orders">
+                <div class="projects">
+                    <h3>
+                        Projects
+                    </h3>
+                    <div class="text">
+                        <span></span>
+                        <span>30 done</span>
+                        <span>this month</span>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>COMPANIES</th>
+                                    <th>MEMBERS</th>
+                                    <th>BUDGET</th>
+                                    <th>COMPLETION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <svg viewBox="0 0 24 24" focusable="false"
+                                            class="chakra-icon chakra-icon css-1kr6y2p">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M4.042 0h12.916A3.539 3.539 0 0120.5 3.542v12.416a3.539 3.539 0 01-3.542 3.542H4.042A3.539 3.539 0 01.5 15.958V3.542A3.539 3.539 0 014.042 0z"
+                                                    fill="#470137"></path>
+                                                <path
+                                                    d="M11.017 5.124l-2.5 4.125 2.666 4.375a.143.143 0 01.017.1c-.008.034-.042.009-.092.017H9.2c-.133 0-.225-.008-.283-.092-.175-.35-.359-.691-.534-1.041a33.608 33.608 0 00-.566-1.05c-.2-.359-.4-.717-.6-1.084H7.2c-.175.359-.367.717-.558 1.075-.192.359-.384.717-.567 1.067-.192.35-.383.708-.575 1.05-.033.083-.1.092-.192.092H3.475c-.033 0-.058.016-.058-.025a.116.116 0 01.016-.092l2.592-4.25L3.5 5.116c-.025-.033-.033-.067-.017-.083.017-.025.05-.034.084-.034h1.891c.042 0 .084.009.117.017a.236.236 0 01.083.075c.159.358.342.717.534 1.075.2.358.391.708.6 1.058.2.35.383.7.558 1.059h.017c.175-.367.358-.725.541-1.075.184-.35.375-.7.567-1.05.192-.35.375-.709.558-1.05.009-.034.025-.067.05-.084a.159.159 0 01.109-.016h1.758a.077.077 0 01.091.058c.009.008-.008.042-.024.058zM14.866 13.917a4.144 4.144 0 01-1.791-.375 2.906 2.906 0 01-1.259-1.134c-.308-.508-.458-1.141-.458-1.9a3.423 3.423 0 011.783-3.05c.584-.325 1.284-.483 2.109-.483.041 0 .1 0 .175.008.075.009.158.009.258.017V4.367c0-.059.025-.092.083-.092h1.692c.042-.008.075.025.083.058v7.95c0 .15.009.317.017.5.017.175.025.342.033.484 0 .058-.025.108-.083.133a6.365 6.365 0 01-1.358.4 7.35 7.35 0 01-1.284.117zm.817-1.667V8.583c-.075-.016-.15-.033-.225-.041-.092-.009-.183-.017-.275-.017-.325 0-.65.067-.942.217-.283.141-.525.35-.708.616-.183.267-.275.625-.275 1.059-.008.291.042.583.142.858.083.225.208.425.375.592.158.15.35.266.566.333.225.075.459.108.692.108.125 0 .242-.008.35-.016a.73.73 0 00.3-.042z"
+                                                    fill="#FF61F6"></path>
+                                            </g>
+                                        </svg>
+                                        Purity UI Version
+                                    </td>
+                                    <td>
+                                        <div class="members">
+                                            <img src="imgs/avatar-1.png" alt="">
+                                            <img src="imgs/avatar-2.png" alt="">
+                                            <img src="imgs/avatar-3.png" alt="">
+                                            <img src="imgs/avatar-4.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>$14,000</td>
+                                    <td>
+                                        <span title="60%">60%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <svg viewBox="0 0 24 24" focusable="false"
+                                            class="chakra-icon chakra-icon css-1kr6y2p">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M18.687 0H2.313A1.813 1.813 0 00.5 1.811v16.374C.5 19.188 1.312 20 2.313 20h16.374a1.813 1.813 0 001.813-1.813V1.812A1.813 1.813 0 0018.687 0z"
+                                                    fill="#DC395F"></path>
+                                                <path
+                                                    d="M7.184 6.293c.665 0 1.222-.522 1.222-1.204 0-.683-.557-1.204-1.222-1.204-.665 0-1.222.521-1.222 1.204 0 .682.557 1.204 1.222 1.204zM4.65 12.739a4.134 4.134 0 00-.108.905c0 1.06.575 1.764 1.797 1.764 1.013 0 1.834-.602 2.426-1.573l-.361 1.449h2.012l1.15-4.612c.287-1.168.844-1.774 1.689-1.774.665 0 1.078.413 1.078 1.096 0 .197-.018.413-.09.646l-.593 2.12c-.09.306-.126.611-.126.899 0 1.006.593 1.742 1.833 1.742 1.06 0 1.904-.682 2.371-2.317l-.79-.305c-.395 1.095-.737 1.293-1.006 1.293-.27 0-.414-.18-.414-.538 0-.162.037-.342.09-.558l.575-2.065c.144-.485.198-.915.198-1.31 0-1.546-.934-2.352-2.066-2.352-1.06 0-2.138.956-2.677 1.962l.395-1.806H8.962L8.53 8.996h1.438l-.885 3.544c-.695 1.545-1.972 1.57-2.132 1.534-.264-.06-.432-.159-.432-.5 0-.198.036-.482.126-.823l1.348-5.346H4.579l-.431 1.591h1.419L4.65 12.74"
+                                                    fill="#fff"></path>
+                                            </g>
+                                        </svg>
+                                        Add Progress Track
+                                    </td>
+                                    <td>
+                                        <div class="members">
+                                            <img src="imgs/avatar-1.png" alt="">
+                                            <img src="imgs/avatar-2.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>$3000</td>
+                                    <td><span title="60%">60%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <svg viewBox="0 0 24 24" focusable="false"
+                                            class="chakra-icon chakra-icon css-1kr6y2p">
+                                            <g>
+                                                <path
+                                                    d="M6.427 9.239a.57.57 0 00-.798-.108.591.591 0 00-.167.209l-4.9 9.803a.586.586 0 00.524.847h6.827a.562.562 0 00.523-.324c1.474-3.043.58-7.67-2.01-10.427z"
+                                                    fill="#2684FF"></path>
+                                                <path
+                                                    d="M10.028.318a12.932 12.932 0 00-.755 12.765l3.292 6.583a.586.586 0 00.523.324h6.826a.583.583 0 00.586-.585c0-.091-.02-.18-.06-.262L11.024.315a.552.552 0 00-.997 0v.003z"
+                                                    fill="#2684FF"></path>
+                                            </g>
+                                        </svg>
+                                        Fix Platform Errors
+                                    </td>
+                                    <td>
+                                        <div class="members">
+                                            <img src="imgs/avatar-3.png" alt="">
+                                            <img src="imgs/avatar-4.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>/</td>
+                                    <td><span title="60%">60%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <svg viewBox="0 0 24 24" focusable="false"
+                                            class="chakra-icon chakra-icon css-1kr6y2p">
+                                            <g clip-path="url(#clip0)" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path
+                                                    d="M7.832.5c-1.105 0-2 .919-1.999 2.05 0 1.13.895 2.048 2 2.05h2V2.55c.001-1.13-.894-2.048-2-2.05zm0 5.467H2.5c-1.106 0-2.001.918-2 2.05-.002 1.13.894 2.048 2 2.05h5.332c1.106-.001 2.002-.919 2-2.05.002-1.132-.894-2.05-2-2.05z"
+                                                    fill="#36C5F0"></path>
+                                                <path
+                                                    d="M20.5 8.016c0-1.13-.895-2.048-2-2.05-1.106.002-2.002.92-2 2.05v2.05h2c1.105 0 2-.918 2-2.05zm-5.334 0V2.55c.001-1.13-.893-2.048-2-2.05-1.105 0-2 .919-2 2.05v5.466c-.001 1.131.894 2.049 2 2.05 1.106 0 2.001-.918 2-2.05z"
+                                                    fill="#2EB67D"></path>
+                                                <path
+                                                    d="M13.166 21c1.106 0 2.001-.919 2-2.05.001-1.13-.894-2.048-2-2.05h-2v2.05c-.001 1.13.894 2.048 2 2.05zm0-5.467h5.333c1.106-.001 2.002-.92 2-2.05.002-1.131-.893-2.049-1.999-2.05h-5.333c-1.106 0-2.001.918-2 2.05-.001 1.13.893 2.049 1.999 2.05z"
+                                                    fill="#ECB22E"></path>
+                                                <path
+                                                    d="M.5 13.483c-.001 1.13.895 2.049 2 2.05 1.106-.001 2.001-.92 2-2.05v-2.05h-2c-1.105.001-2.001.919-2 2.05zm5.333 0v5.467c-.001 1.13.894 2.048 2 2.05 1.105 0 2-.919 2-2.05v-5.465c.002-1.131-.894-2.05-2-2.05-1.106 0-2 .917-2 2.048z"
+                                                    fill="#E01E5A"></path>
+                                            </g>
+                                        </svg>
+                                        Launch our Mobile App
+                                    </td>
+                                    <td>
+                                        <div class="members">
+                                            <img src="imgs/avatar-1.png" alt="">
+                                            <img src="imgs/avatar-2.png" alt="">
+                                            <img src="imgs/avatar-3.png" alt="">
+                                            <img src="imgs/avatar-4.png" alt="">
+                                            <img src="imgs/avatar-3.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>$32,000</td>
+                                    <td><span title="60%">60%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <svg viewBox="0 0 24 24" focusable="false"
+                                            class="chakra-icon chakra-icon css-1kr6y2p">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M10.5 0C4.977 0 .5 4.477.5 10s4.477 10 10 10 10-4.477 10-10c0-5.522-4.477-10-10-10zm4.586 14.422a.623.623 0 01-.857.208c-2.348-1.435-5.304-1.76-8.785-.964a.623.623 0 11-.277-1.216c3.808-.87 7.076-.495 9.712 1.115.294.181.387.564.207.857zm1.223-2.722a.78.78 0 01-1.072.257c-2.687-1.652-6.786-2.13-9.965-1.166a.78.78 0 01-.973-.519.781.781 0 01.52-.972c3.632-1.102 8.147-.569 11.233 1.329a.78.78 0 01.258 1.072zm.106-2.835C13.19 6.95 7.875 6.775 4.797 7.708a.935.935 0 11-.543-1.79c3.533-1.072 9.404-.865 13.115 1.338a.935.935 0 01-.954 1.609z"
+                                                    fill="#2EBD59"></path>
+                                            </g>
+                                        </svg>
+                                        Add the New Pricing Page
+                                    </td>
+                                    <td>
+                                        <div class="members">
+                                            <img src="imgs/avatar-1.png" alt="">
+                                            <img src="imgs/avatar-3.png" alt="">
+
+                                        </div>
+                                    </td>
+                                    <td>$400</td>
+                                    <td><span title="60%">60%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <svg viewBox="0 0 24 24" focusable="false"
+                                            class="chakra-icon chakra-icon css-1kr6y2p">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M18.687 0H2.313A1.813 1.813 0 00.5 1.811v16.374C.5 19.188 1.312 20 2.313 20h16.374a1.813 1.813 0 001.813-1.813V1.812A1.813 1.813 0 0018.687 0z"
+                                                    fill="#DC395F"></path>
+                                                <path
+                                                    d="M7.184 6.293c.665 0 1.222-.522 1.222-1.204 0-.683-.557-1.204-1.222-1.204-.665 0-1.222.521-1.222 1.204 0 .682.557 1.204 1.222 1.204zM4.65 12.739a4.134 4.134 0 00-.108.905c0 1.06.575 1.764 1.797 1.764 1.013 0 1.834-.602 2.426-1.573l-.361 1.449h2.012l1.15-4.612c.287-1.168.844-1.774 1.689-1.774.665 0 1.078.413 1.078 1.096 0 .197-.018.413-.09.646l-.593 2.12c-.09.306-.126.611-.126.899 0 1.006.593 1.742 1.833 1.742 1.06 0 1.904-.682 2.371-2.317l-.79-.305c-.395 1.095-.737 1.293-1.006 1.293-.27 0-.414-.18-.414-.538 0-.162.037-.342.09-.558l.575-2.065c.144-.485.198-.915.198-1.31 0-1.546-.934-2.352-2.066-2.352-1.06 0-2.138.956-2.677 1.962l.395-1.806H8.962L8.53 8.996h1.438l-.885 3.544c-.695 1.545-1.972 1.57-2.132 1.534-.264-.06-.432-.159-.432-.5 0-.198.036-.482.126-.823l1.348-5.346H4.579l-.431 1.591h1.419L4.65 12.74"
+                                                    fill="#fff"></path>
+                                            </g>
+                                        </svg>
+                                        Redesign New Online Shop
+                                    </td>
+                                    <td>
+                                        <div class="members">
+                                            <img src="imgs/avatar-4.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>$7,600</td>
+                                    <td><span title="60%">60%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="orders">
+                    <h3>
+                        Orders Overview
+                    </h3>
+                    <div class="info">
+                        <span>30%</span>
+                        <span>this month.</span>
+                    </div>
+                    <div class="steps">
+                        <div class="box">
+                            <i class="fa-solid fa-bell"></i>
+                            <div class="text">
+                                <h4>$2400, Design changes</h4>
+                                <span>22 DEC 7:20 PM</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg  stroke="currentColor" fill="orange" stroke-width="0" viewBox="0 0 384 512" focusable="false" class="chakra-icon css-xp7xme" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>
+                            <div class="text">
+                                <h4>$2400, Design changes</h4>
+                                <span>22 DEC 7:20 PM</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg stroke="currentColor" fill="#4299E1" stroke-width="0" viewBox="0 0 576 512" focusable="false" class="chakra-icon css-1m6hvct" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg>
+                            <div class="text">
+                                <h4>$2400, Design changes</h4>
+                                <span>22 DEC 7:20 PM</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg stroke="currentColor" fill="#F6AD55" stroke-width="0" viewBox="0 0 576 512" focusable="false" class="chakra-icon css-2v7t04" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"></path></svg>
+                            <div class="text">
+                                <h4>$2400, Design changes</h4>
+                                <span>22 DEC 7:20 PM</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg stroke="currentColor" fill="#800080" stroke-width="0" role="img" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-1k9ywv4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M6 1.807L0 5.629l6 3.822 6.001-3.822L6 1.807zM18 1.807l-6 3.822 6 3.822 6-3.822-6-3.822zM0 13.274l6 3.822 6.001-3.822L6 9.452l-6 3.822zM18 9.452l-6 3.822 6 3.822 6-3.822-6-3.822zM6 18.371l6.001 3.822 6-3.822-6-3.822L6 18.371z"></path></svg>
+                            <div class="text">
+                                <h4>$2400, Design changes</h4>
+                                <span>22 DEC 7:20 PM</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-icon css-lu3lnt"><g clip-path="url(#clip0)"><path d="M4.042 0h12.916A3.539 3.539 0 0120.5 3.542v12.416a3.539 3.539 0 01-3.542 3.542H4.042A3.539 3.539 0 01.5 15.958V3.542A3.539 3.539 0 014.042 0z" fill="#470137"></path><path d="M11.017 5.124l-2.5 4.125 2.666 4.375a.143.143 0 01.017.1c-.008.034-.042.009-.092.017H9.2c-.133 0-.225-.008-.283-.092-.175-.35-.359-.691-.534-1.041a33.608 33.608 0 00-.566-1.05c-.2-.359-.4-.717-.6-1.084H7.2c-.175.359-.367.717-.558 1.075-.192.359-.384.717-.567 1.067-.192.35-.383.708-.575 1.05-.033.083-.1.092-.192.092H3.475c-.033 0-.058.016-.058-.025a.116.116 0 01.016-.092l2.592-4.25L3.5 5.116c-.025-.033-.033-.067-.017-.083.017-.025.05-.034.084-.034h1.891c.042 0 .084.009.117.017a.236.236 0 01.083.075c.159.358.342.717.534 1.075.2.358.391.708.6 1.058.2.35.383.7.558 1.059h.017c.175-.367.358-.725.541-1.075.184-.35.375-.7.567-1.05.192-.35.375-.709.558-1.05.009-.034.025-.067.05-.084a.159.159 0 01.109-.016h1.758a.077.077 0 01.091.058c.009.008-.008.042-.024.058zM14.866 13.917a4.144 4.144 0 01-1.791-.375 2.906 2.906 0 01-1.259-1.134c-.308-.508-.458-1.141-.458-1.9a3.423 3.423 0 011.783-3.05c.584-.325 1.284-.483 2.109-.483.041 0 .1 0 .175.008.075.009.158.009.258.017V4.367c0-.059.025-.092.083-.092h1.692c.042-.008.075.025.083.058v7.95c0 .15.009.317.017.5.017.175.025.342.033.484 0 .058-.025.108-.083.133a6.365 6.365 0 01-1.358.4 7.35 7.35 0 01-1.284.117zm.817-1.667V8.583c-.075-.016-.15-.033-.225-.041-.092-.009-.183-.017-.275-.017-.325 0-.65.067-.942.217-.283.141-.525.35-.708.616-.183.267-.275.625-.275 1.059-.008.291.042.583.142.858.083.225.208.425.375.592.158.15.35.266.566.333.225.075.459.108.692.108.125 0 .242-.008.35-.016a.73.73 0 00.3-.042z" fill="#FF61F6"></path></g></svg>
+                            <div class="text">
+                                <h4>$2400, Design changes</h4>
+                                <span>22 DEC 7:20 PM</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
