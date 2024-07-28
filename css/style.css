@@ -39,9 +39,13 @@ html {
     --mainColor: #4FD1C5;
 }
 
+body {
+     background-color: #F7FAFC; 
+    min-width:100%;
+}
+
 .wrapper {
     width: 100%;
-    background-color: #F7FAFC; 
     padding: 20px;
     display: grid;
     grid-template-columns: auto 1fr;
